@@ -1,5 +1,7 @@
 package controller;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Luis
@@ -25,6 +27,7 @@ public class HiloAnimal extends Thread {
                 if (this.recorrido >= 800) {
 //                    System.out.println("Animal llegó a la meta: " + this.animal + " (Orden de llegada: " + this.contadorAnimales + ")");
                     this.guardarPosiciones += "Animal llegó a la meta: " + this.animal + " (Orden de llegada: " + String.valueOf(this.contadorAnimales) + ")\n";
+                    JOptionPane.showMessageDialog(null, "Animal llegó a la meta: " + this.animal + " (Orden de llegada: " + this.contadorAnimales + ")");
                     contadorAnimales++;
                     break;
                 } else {
